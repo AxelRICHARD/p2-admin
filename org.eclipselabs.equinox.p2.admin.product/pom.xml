@@ -12,7 +12,7 @@
 
   <groupId>org.eclipselabs.equinox.p2</groupId>
   <artifactId>org.eclipselabs.equinox.p2.admin.product</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
   <packaging>eclipse-repository</packaging>
 
    <build>
@@ -34,6 +34,9 @@
 			  <product>
 			    <id>org.eclipse.equinox.p2.admin.rcp.product</id>
 			    <rootFolder>p2-admin</rootFolder>
+				<rootFolders>
+					<macosx>p2-admin.app</macosx>
+				</rootFolders>
 			    <archiveFileName>p2-admin-${unqualifiedVersion}</archiveFileName>
 			  </product>
 			</products>
